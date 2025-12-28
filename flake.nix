@@ -27,19 +27,10 @@
 
         jellyswarrm = pkgs.rustPlatform.buildRustPackage rec{
           pname = "jellyswarrm";
-          version = "0.2.0";
+          version = "0.2.1";
 
-          src = pkgs.fetchFromGitHub {
-            owner = "LLukas22";
-            repo = "Jellyswarrm";
-            rev = "v${version}";
-            # Hash must be updated upon new release of Jellyswarrm
-            sha256 = "sha256-UvHZ5u9mSzMc7OxJF+diQmaxmXt+wXsVA6bI23TW8vw=";
-          };
-
-          # Hash must be updated upon new release of Jellyswarrm
-          cargoHash = "sha256-aWMW/mACrdCQWCi+9+2jQXYYEE1e84xlFWexr+SzM2o=";
-
+          src = ./.;
+          cargoHash = "sha256-D3IOpcP9RXPmXJQcFibWaBShb6G4DXZSPe5hmqrgykM=";
           buildInputs = with pkgs; [
             jellyfin-web
           ];
