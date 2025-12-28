@@ -34,7 +34,7 @@
             repo = "Jellyswarrm";
             rev = "v${version}";
             # Hash must be updated upon new release of Jellyswarrm
-            sha256 = "sha256-UvHZ5u9mSzMc7OxJF+diQmaxmXt+wXsVA6bI23TW8vw=";
+            sha256 = "sha256-bf+HiZLS54abDV9wW/MZQT/UJrtUQMlmFcmN+5T2FYU=";
           };
 
           # Hash must be updated upon new release of Jellyswarrm
