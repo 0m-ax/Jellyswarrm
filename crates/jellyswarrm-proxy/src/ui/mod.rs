@@ -62,7 +62,7 @@ pub struct JellyfinUiVersion {
 impl default::Default for JellyfinUiVersion {
     fn default() -> Self {
         JellyfinUiVersion {
-            version: "unknown".to_string(),
+            version: "10.11.6".to_string(),
             commit: "unknown".to_string(),
         }
     }
@@ -81,7 +81,7 @@ fn get_jellyfin_ui_version() -> Option<JellyfinUiVersion> {
             }
         }
         Some(JellyfinUiVersion {
-            version: version.to_string(),
+            version: "10.11.6".to_string(),
             commit: commit.to_string(),
         })
     } else {
